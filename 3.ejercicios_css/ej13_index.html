@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ejemplo de selectores avanzados</title>
+    <style>
+        table, tr, th, td{
+            border-style: solid;
+            border-width: 1px;
+            border-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        tr{
+            height: 35px;
+
+        }
+        th:first-child{
+            background-color: #e6f3ff;
+            text-align: left;
+        }
+
+    
+        tr:first-child>th:first-child{
+            background-color: #f5f5f5;
+            text-align: center;
+
+        }
+
+        .euro img {
+            width: 15px;
+            height: 15px;
+            vertical-align: middle;
+            text-align: left;
+        }
+        .dolar img {
+            width: 15px;
+            height: 15px;
+            vertical-align: middle;
+            text-align: left;
+
+        }
+        .libra img {
+            width: 15px;
+            height: 15px;
+            vertical-align: middle;
+            text-align: left;
+
+        }
+        .yen img {
+            width: 15px;
+            height: 15px;
+            vertical-align: middle;
+            text-align: left;
+
+        }
+
+        th{
+            vertical-align: middle;
+
+        }
+        td{
+            vertical-align: middle;
+            text-align: right;
+        }
+        tr:nth-child(2)>td{
+            background-color: rgb(248, 250, 131);
+        }
+        tr:nth-child(4)>td{
+            background-color: rgb(248, 250, 131);
+        }
+        tr:nth-child(2)>td:hover{
+            background-color: yellow;
+        }
+        tr:nth-child(4)>td:hover{
+            background-color: yellow;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Cambio</th>
+            <th>Compra</th>
+            <th>Venta</th>
+            <th>Máximo</th>
+            <th>Mínimo</th>
+        </tr>
+        <tr>
+            <th class="euro"><img src="imagenes/euro.jpg">Euro/Dolar</th>
+            <td>1.25</td>
+            <td>1.25</td>
+            <td>1.25</td>
+            <td>1.24</td>
+        </tr>
+        <tr>
+            <th class="dolar"><img src="imagenes/dollar.jpg">Dolar/Yen</th>
+            <td>119.01</td>
+            <td>119.05</td>
+            <td>119.82</td>
+            <td>119.82</td>
+        </tr>
+        <tr>
+            <th class="libra"><img src="imagenes/libra.jpg">Libra/Dolar</th>
+            <td>1.86</td>
+            <td>1.86</td>
+            <td>1.86</td>
+            <td>1.85</td>
+        </tr>
+        <tr>
+            <th class="yen"><img src="imagenes/yen.jpg">Yen/Euro</th>
+            <td>0.67</td>
+            <td>0.67</td>
+            <td>0.66</td>
+            <td>0.67</td>
+        </tr>
+    </table>
+</body>
+<img src="selectores-avanzados-2.gif" alt="">
+</html>
