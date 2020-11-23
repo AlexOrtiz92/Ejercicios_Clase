@@ -1,0 +1,67 @@
+@import "~bootstrap/scss/bootstrap";
+
+.pokemon-type {
+  color: white;
+  @extend .list-group-item;
+  @extend .text-center;
+}
+
+.type-grass {
+  background: green;
+  @extend .pokemon-type;
+}
+.type-poison {
+  background: mediumpurple;
+  @extend .pokemon-type;
+}
+
+.type-fire {
+  background: rgb(219, 64, 64);
+  @extend .pokemon-type;
+}
+.type-none {
+  background: white;
+  @extend .pokemon-type;
+  color: black;
+}
+
+/*la propiedad @extend sirve para meter clases predefinidas de Bootstrap dentro de otras definidas por el usuario*/
+.pokemon-type-list {
+  @extend .list-group;
+  @extend .list-group-flush;
+}
+.edicion {
+  font-weight: bold;
+}
+.pokemon-img {
+  @extend .card-img-top;
+}
+
+.pokemon-body {
+  @extend .card-body;
+}
+.pokemon-data {
+  color: black;
+  @extend .list-group-item;
+  @extend .text-center;
+}
+
+.pokemon-body-title {
+  @extend .card-title;
+}
+
+.pokemon-body-text {
+  @extend .card-text;
+}
+
+.pokemon-header {
+  @extend .card-header;
+}
+.index {
+  color: gray;
+  @extend .pokemon-data;
+}
+
+.card {
+  margin-top: 20px;
+}
